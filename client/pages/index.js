@@ -71,7 +71,7 @@ const Home = () => {
         <Input
           onChange={(e) => setInputVal(e.target.value)}
           width="300px"
-          placeholder="New Todo"
+          placeholder="New groccery"
           size="md"
           value={inputVal}
         />
