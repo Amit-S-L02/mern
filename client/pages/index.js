@@ -56,7 +56,12 @@ const Home = () => {
 
   return (
     <>
-      <Heading mb={12}>Grocery List</Heading>
+      <Heading
+        mb={12}
+        style="padding: 20%;background-color: #222;  color: #ddd;"
+      >
+        Grocery List
+      </Heading>
 
       <Form mb={10} as="form" onSubmit={addTodo}>
         <Input
