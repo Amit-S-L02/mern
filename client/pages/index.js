@@ -57,13 +57,17 @@ const Home = () => {
   return (
     <>
       <Heading
-        mb={12}
-        style="padding: 20%;background-color: #222;  color: #ddd;"
+        mb={10}
+        paddingLeft={10}
+        paddingBottom={15}
+        paddingTop={20}
+        bg="#222"
+        color="#ddd"
       >
         Grocery List
       </Heading>
 
-      <Form mb={10} as="form" onSubmit={addTodo}>
+      <Form as="form" mb={12} paddingLeft={10} onSubmit={addTodo}>
         <Input
           onChange={(e) => setInputVal(e.target.value)}
           width="300px"
@@ -75,11 +79,13 @@ const Home = () => {
       </Form>
 
       {todos.map(({ _id, title }) => (
-        <Box key={_id} mb={10}>
-          <Center w="180px" h="80px" bg="red.200">
+        <Box key={_id} mb={12} paddingTop={10} paddingLeft={10}>
+          <Center w="250px" h="50px" bg="#222" color="#ddd" mb={5}>
             {title}
           </Center>
-          <Button onClick={deleteTodo(_id)}>Delete</Button>
+          <Button ml={20} bg="red.200" onClick={deleteTodo(_id)}>
+            Delete
+          </Button>
         </Box>
       ))}
     </>
