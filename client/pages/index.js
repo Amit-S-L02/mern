@@ -56,7 +56,7 @@ const Home = () => {
 
   return (
     <>
-      <Heading mb={12}>MERN</Heading>
+      <Heading mb={12}>Grocery List</Heading>
 
       <Form mb={10} as="form" onSubmit={addTodo}>
         <Input
